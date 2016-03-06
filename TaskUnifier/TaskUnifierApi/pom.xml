@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.leclercb</groupId>
+    <artifactId>taskunifier-api</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.leclercb</groupId>
+        <artifactId>taskunifier</artifactId>
+        <version>4.3.4</version>
+    </parent>
+
+    <name>TaskUnifier Api</name>
+    <description>TaskUnifier Api Project</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.leclercb</groupId>
+            <artifactId>commons</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+    <scm>
+        <connection>scm:svn:https://svn.code.sf.net/p/taskunifier/code/trunk/TaskUnifier/TaskUnifierApi</connection>
+        <developerConnection>scm:svn:https://svn.code.sf.net/p/taskunifier/code/trunk/TaskUnifier/TaskUnifierApi
+        </developerConnection>
+    </scm>
+
+</project>

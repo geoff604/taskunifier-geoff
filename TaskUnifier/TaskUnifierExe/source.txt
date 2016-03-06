@@ -1,0 +1,29 @@
+---------------------------------------------
+How to import source code into IntelliJ IDEA:
+---------------------------------------------
+
+1/ Open the following project:
+	- https://leclercb@svn.code.sf.net/p/taskunifier/code/trunk/TaskUnifier
+2/ Add the following ANT files:
+    - TaskUnifier/build.xml
+    - TaskUnifier/TaskUnifierExe/build.xml
+3/ Run the following ANT targets:
+    - copy-private-files
+    - install-libs
+
+-------------------------
+How to build TaskUnifier:
+-------------------------
+
+1/ Set the version in general.properties (TaskUnifierGui)
+2/ Run the ANT target "set-version"
+3/ Run "clean" and "install" with Maven
+4/ Run the ANT target "create-sources-binaries"
+
+---------------------
+Configuration values:
+---------------------
+
+- build.properties
+- tools/innosetup/innosetup.bat:
+	- Line 1: Path to ISCC.exe
